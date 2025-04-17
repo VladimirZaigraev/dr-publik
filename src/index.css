@@ -14,6 +14,9 @@
   -o-transform: rotate(90deg);
   transform: rotate(90deg); */
 }
+body {
+  margin: 0;
+}
 html {
   overflow: hidden;
   height: 110dvh;

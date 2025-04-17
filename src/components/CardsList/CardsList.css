@@ -101,13 +101,14 @@
   position: relative;
 }
 .cardsList-title {
-  font-size: 40px;
+  font-size: 30px;
   font-weight: 500;
   color: #fff;
   /* text-shadow: 1px 1px 1px silver, -1px 1px 1px silver; */
   /* color: white; */
   /* transition: all 0.5s; */
   font-style: italic;
+  margin: 0;
 }
 
 .cardsList-btn {
@@ -138,6 +139,25 @@ button {
 .cardsList-btns {
   display: flex;
   gap: 5px;
+  position: fixed;
+  bottom: 0;
+  /* background-color: #9198e5; */
+  width: 100%;
+  justify-content: center;
+  padding: 10px;
+}
+
+.cardsList-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  /* background-color: #9198e5; */
+  width: 100%;
+  left: 0;
+  right: 0;
+  padding: 10px;
 }
 
 .cardsList-btn-close {
