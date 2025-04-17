@@ -1,0 +1,338 @@
+.swipe {
+  position: absolute;
+}
+
+.cardContainer {
+  width: 90vw;
+  max-width: 360px;
+  height: 450px;
+}
+
+.card {
+  position: relative;
+  background-color: #fff;
+  width: 90vw;
+  max-width: 360px;
+  height: 450px;
+  box-shadow: 0px 0px 60px 0px rgba(0, 0, 0, 0.3);
+  border-radius: 20px;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  position: relative;
+}
+.card-img {
+  /* max-width: 260px; */
+  /* width: 100%; */
+  height: 600px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.cardContent {
+  width: 100%;
+  height: 100%;
+}
+
+.swipe:last-of-type {
+}
+
+.card h3 {
+  position: absolute;
+  bottom: 0;
+  margin: 10px;
+  color: #fff;
+}
+
+.infoText {
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  color: #fff;
+  animation-name: popup;
+  animation-duration: 800ms;
+}
+
+.buttons {
+  margin: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.buttons button:hover {
+  transform: scale(1.05);
+}
+
+@keyframes popup {
+  0% {
+    transform: scale(1, 1);
+  }
+  10% {
+    transform: scale(1.1, 1.1);
+  }
+  30% {
+    transform: scale(0.9, 0.9);
+  }
+  50% {
+    transform: scale(1, 1);
+  }
+  57% {
+    transform: scale(1, 1);
+  }
+  64% {
+    transform: scale(1, 1);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
+
+.cardsList {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.cardsList-title {
+  font-size: 40px;
+  font-weight: 500;
+  color: #fff;
+  /* text-shadow: 1px 1px 1px silver, -1px 1px 1px silver; */
+  /* color: white; */
+  /* transition: all 0.5s; */
+  font-style: italic;
+}
+
+.cardsList-btn {
+  border: none;
+  background-color: inherit;
+  padding: 10px;
+  background-color: #ffffff56;
+  &:active {
+    border: none;
+    background-color: inherit;
+  }
+  img {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+button {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  /* отображаем курсор в виде руки при наведении; некоторые
+    считают, что необходимо оставлять стрелочный вид для кнопок */
+  cursor: pointer;
+}
+.cardsList-btns {
+  display: flex;
+  gap: 5px;
+}
+
+.cardsList-btn-close {
+  border-radius: 50%;
+  padding: 10px;
+  border: 2px solid #f3485b;
+  border-color: #f3485b;
+  &:focus {
+    border-color: #f3485b;
+  }
+}
+.cardsList-btn-reset {
+  border-radius: 50%;
+  padding: 10px;
+  border: 2px solid #c8720b;
+  border-color: #c8720b;
+  &:focus {
+    border-color: #c8720b;
+  }
+}
+
+.cardsList-btn-heart {
+  border-radius: 50%;
+  padding: 10px;
+  border: 2px solid #199a6a;
+  border-color: #199a6a;
+  &:focus {
+    border-color: #199a6a;
+  }
+}
+
+.cardContainer {
+  overflow: hidden;
+}
+.swipe {
+  position: absolute;
+}
+
+.cardContainer {
+  width: 90vw;
+  /* max-width: 360px;
+  height: 400px; */
+}
+
+.card-outlet {
+  position: absolute;
+  z-index: 2;
+  background: #020024;
+  background: linear-gradient(to bottom, rgba(2, 0, 36, 1) 0%, rgba(70, 70, 125, 0) 57%);
+  height: 600px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  rotate: 180deg;
+}
+
+.card-textBox {
+  position: absolute;
+  z-index: 10;
+  bottom: 0;
+}
+.card-textBox-titleWrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+}
+.card-textBox-title {
+  color: white;
+  font-size: 26px;
+  font-weight: 600;
+  margin: 0;
+}
+.card-textBox-year {
+  font-size: 20px;
+  color: #fff;
+  margin: 0;
+}
+.card-textBox-text {
+  color: white;
+  font-size: 30px;
+  font-weight: 400;
+  font-family: Proxima Nova;
+  text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+}
+.card-textBox-description {
+  padding: 10px;
+  font-size: 14px;
+  display: block;
+  color: white;
+  background-color: #505965;
+  border-radius: 10px;
+  margin: 0 15px 15px 15px;
+  border: 1px solid white;
+}
+.card-img {
+}
+
+.modal {
+  position: fixed;
+
+  top: 0;
+
+  left: 0;
+
+  width: 100%;
+
+  height: 100%;
+
+  background-color: rgba(0, 0, 0, 0.75);
+
+  overflow: hidden;
+
+  overflow-y: auto;
+
+  z-index: 999;
+}
+.modal-wrapper {
+  position: absolute;
+
+  top: 0;
+
+  left: 0;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  width: 100%;
+
+  min-height: 100%;
+}
+.modal-content {
+  position: relative;
+
+  margin: 20px;
+
+  /* width: 90%; */
+  max-width: 360px;
+
+  border-radius: 20px;
+
+  background-color: #ffffff;
+
+  padding: 40px 20px 20px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.modal-img {
+  /* width: 90%; */
+  max-height: 300px;
+}
+.modal-text {
+  font-size: 16px;
+}
+.modal-close-button {
+  position: absolute;
+
+  top: 16px;
+
+  right: 16px;
+
+  width: 30px;
+
+  height: 30px;
+}
+.modal {
+  transition: opacity 0.3s;
+}
+
+.modal-content {
+  transition: transform 0.3s;
+}
+
+.modal--entering,
+.modal--entered {
+  opacity: 1;
+}
+
+.modal--entering .modal-content,
+.modal--entered .modal-content {
+  transform: translateY(0);
+}
+
+.modal--exiting,
+.modal--exited {
+  opacity: 0;
+}
+
+.modal--exiting .modal-content,
+.modal--exited .modal-content {
+  transform: translateY(-50px);
+}

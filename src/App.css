@@ -1,0 +1,40 @@
+/* #root {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  height: 100dvh;
+  overflow: hidden;
+  /* background: linear-gradient(#fff, #999); */
+
+* {
+  user-select: none;
+}
+
+/* #root > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+} */
+
+.app {
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  height: 100dvh;
+  width: 100dvw;
+}
+
+/* .app > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+} */

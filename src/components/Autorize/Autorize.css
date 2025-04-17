@@ -1,0 +1,20 @@
+.autorize {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+.autorize-input {
+  background-color: #e66465;
+  font-size: 16px;
+}
+
+.autorize-button {
+  background-color: #9198e5;
+  border-radius: 10px;
+  color: #000000;
+}
+.g-button.g-button_pin_round-round.g-button {
+  border-radius: 10px;
+  font-size: 16px;
+}

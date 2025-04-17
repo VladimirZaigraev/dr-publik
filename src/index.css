@@ -1,0 +1,22 @@
+#root {
+  font-family: YS Text Home, -apple-system, BlinkMacSystemFont, Arial, Helvetica, Arial Unicode MS, sans-serif;
+  font-feature-settings: "liga", "kern";
+  /* background: linear-gradient(#e66465, #9198e5); */
+  overflow: hidden;
+  height: 100dvh;
+  width: 100dvw;
+  z-index: -1;
+  background-image: url("./assets/icons/Vector.svg");
+  background-size: 40px auto;
+  /* -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg); */
+}
+html {
+  overflow: hidden;
+  height: 110dvh;
+  width: 100dvw;
+  background: linear-gradient(#e66465, #9198e5);
+}
